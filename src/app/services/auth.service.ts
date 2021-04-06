@@ -95,7 +95,7 @@ export class AuthService {
       return false;
     }
 
-    const expira = Number(localStorage.getItem('expira'));
+    const expira = Number(localStorage.getItem('expire'));
     const expiraDate = new Date();
     expiraDate.setTime(expira);
 
@@ -104,7 +104,7 @@ export class AuthService {
     } else {
       return false;
     }
-    
+
   }
 
 

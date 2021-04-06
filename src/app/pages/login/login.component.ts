@@ -45,7 +45,7 @@ export class LoginComponent implements OnInit {
 
     this.auth.login( this.usuario ).
       subscribe( resp => {
-        console.log(resp);
+      //  console.log(resp);
         Swal.close();
 
         if (this.recordarme) {
